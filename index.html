@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechRevive - Computer Repair & Laptops</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body { color: #333; background-color: #f8f9fa; }
+
+        header {
+            background-color: #0b2545;
+            color: #fff;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo-container { display: flex; align-items: center; gap: 10px; }
+        .logo-text { font-size: 26px; font-weight: bold; color: #fff; }
+        .logo-text span { color: #ff6b00; }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        nav a:hover { color: #ff6b00; }
+        .header-contact {
+            background-color: #ff6b00;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0b2545 60%, #134074);
+            color: white;
+            padding: 80px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .hero-text { flex: 1; min-width: 300px; padding-right: 20px; }
+        .hero-text h1 { font-size: 42px; margin-bottom: 10px; line-height: 1.2; }
+        .hero-text h1 span { color: #ff6b00; }
+        .hero-text p.tagline {
+            font-size: 20px;
+            color: #ff6b00;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        .hero-text p.desc {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #dcdcdc;
+        }
+        .cta-btn {
+            display: inline-block;
+            background-color: #ff6b00;
+            color: white;
+            padding: 14px 28px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .cta-btn:hover { background-color: #e05d00; }
+
+        .features {
+            background-color: #134074;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+
+        .services { padding: 60px 5%; text-align: center; }
+        .services h2 {
+            font-size: 32px;
+            color: #0b2545;
+            margin-bottom: 40px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+        .service-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border-top: 4px solid #ff6b00;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        .service-card .icon { font-size: 40px; margin-bottom: 15px; }
+        .service-card h3 {
+            color: #0b2545;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #0b2545;
+            color: white;
+            text-align: center;
+            padding: 30px 5%;
+            margin-top: 40px;
+        }
+        footer p { margin-bottom: 10px; }
+        footer a { color: #ff6b00; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-text">Tech<span>Revive</span></div>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <a href="tel:7029258801" class="header-contact">CALL: 7029258801</a>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>COMPUTER & LAPTOP <br><span>REPAIR SERVICES</span></h1>
+            <p class="tagline">FAST. RELIABLE. AFFORDABLE.</p>
+            <p class="desc">Aapke laptop aur computer ki sabhi dikkaton ka ek maatra professional solution.</p>
+            <a href="tel:7029258801" class="cta-btn">CALL NOW: 7029258801</a>
+        </div>
+    </section>
+
+    <div class="features">
+        FAST • RELIABLE • AFFORDABLE
+    </div>
+
+    <section class="services" id="services">
+        <h2>Hamari Main Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon">🖥️</div>
+                <h3>Screen Replacement</h3>
+                <p>Broken ya damaged laptop screens ka quick replacement.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon">🔍</div>
+                <h3>Data Recovery</h3>
+                <p>Lost ya corrupted data ko safely recover karein.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon">🔋</div>
+                <h3>Battery Fix</h3>
+                <p>Laptop battery drain aur charging issues ka solution.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon">💻</div>
+                <h3>Software Install</h3>
+                <p>OS installation, Antivirus aur Software setup.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p><strong>TechRevive</strong> - Computer Repair & Laptops</p>
+        <p>Contact: <a href="tel:7029258801">7029258801</a> | Website: <a href="http://www.techrevive.co.in">www.techrevive.co.in</a></p>
+        <p style="font-size: 12px; color: #aaa; margin-top: 15px;">© TechRevive. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
